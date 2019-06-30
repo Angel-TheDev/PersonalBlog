@@ -7,19 +7,27 @@
 <html>
 <head>
     <link rel="stylesheet" href="~/CSS/layout.css" />
-    <link rel="stylesheet" type="text/css" href="~/CSS/style.css">
+    <link rel="stylesheet" type="text/css" href="~/CSS/Style.css">
     <meta name="viewport" content="width=device-width" />
     <title>_Layout</title>
 </head>
-    <nav>
-            <a href="#"><b>Home</b></a>
-            <a href="#aboutMe"><b>Categories</b></a>
-            <a href="#projects"><b>Tags</b></a>
-    </nav>
-<header>
-    <h1>Personal Blog</h1>
-    <span>Angel</span>
-</header>
+
+<nav role="navigation">
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li>
+            <a href="#">Categories</a>
+            <ul class="dropdown">
+                <li><a href="/Category/Index/">Cars</a></li>
+                <li><a href="#">SD</a></li>
+                <li><a href="#">Sub-3</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Three</a></li>
+    </ul>
+
+</nav>
+
 
 <body>
     @RenderBody()

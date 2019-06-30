@@ -11,23 +11,14 @@
     text-align: center;
 }
 
-ul {
-    list-style: none;
+nav{
+    color: black; 
 }
 
-li {
-    list-style: none;
-}
 
 body {
-    background-color: purple;
+    background-color: pink;
 }
-
-nav a:hover {
-    background: white;
-}
-
-
 
 header h1 {
 
@@ -36,8 +27,5 @@ header h1 {
     flex-flow: row;
     justify-content: center;
 }
-nav a {
-    padding: 1em .5em;
-    color: rgb(160, 160, 160);
-    text-decoration: none;
-}
+
+/*--------------------------------------*/
