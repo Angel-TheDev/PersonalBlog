@@ -27,17 +27,22 @@ namespace PersonalBlog.Repositories
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Category>().HasData(
-                new Category
+                new Category()
                 {
                     Id = 1,
                     Name = "Software Development"
                 },
 
-                  new Category
+                  new Category()
                   {
                       Id = 2,
                       Name = "Cars"
-                  });
+                  },
+                   new Category()
+                   {
+                       Id = 3,
+                       Name = "All Posts",
+                   });
 
             modelBuilder.Entity<TagPosts>().HasKey(tp => new { tp.TagId, tp.PostId });
 
